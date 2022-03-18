@@ -1,0 +1,38 @@
+{{ $about := .Site.Params.section_about }}
+<section id="about" class="mt-5">
+    <div class="container">
+        <div class="row egitim-row aos-init aos-animate" data-aos="fade-up">
+            <div class="col-lg-6 col-12 px-0 pb-5 d-flex justify-content-center align-items-center">
+                <a
+                href="/images/ana_ekran.png" data-gall="limanmys" class="venobox">
+                    <img src="/images/ana_ekran.png" class="img-fluid" />
+                    <div class="img-caption p-3">
+                        <div class="row">
+                            <div class="col">Liman MYS'ye daha yakından bakın...
+                            </div>
+                            <div class="col-auto align-self-center">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 col-12 pl-3 py-4">
+                <h1 class="text-left">{{ $about.title }}</h1>
+                <p>{{ safeHTML $about.text }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row banner py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 align-items-center d-flex justify-content-start text-center text-lg-left">
+                    <span>Liman Merkezi Yönetim Sistemini şimdi ücretsiz deneyin</span>
+                </div>
+                <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
+                    <a href="{{ ref . "iletisim.md" }}" class="btn btn-primary">Deneme Sürümü</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

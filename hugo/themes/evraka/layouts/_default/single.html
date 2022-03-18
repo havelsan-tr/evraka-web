@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "nav.html" . }}
+<section id="content" class="d-flex">
+    <div class="container-fluid">
+        <div class="row" data-aos="fade-up">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col">
+                        {{ if ne .Params.title_hidden true }}<h2>{{ .Title }}</h2>{{ end }}
+                        {{ .Content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

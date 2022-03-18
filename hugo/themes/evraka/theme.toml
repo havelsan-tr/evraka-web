@@ -1,0 +1,12 @@
+name = "Liman V3"
+license = "GPL v2.1"
+licenselink = "https://github.com/limanmys/Site/blob/master/LICENSE"
+description = "Liman MYS hugo teması"
+homepage = "https://liman.havelsan.com.tr/"
+tags = []
+features = []
+min_version = "0.45"
+
+[author]
+  name = "Dogukan Oksuz"
+  homepage = "https://github.com/dogukanoksuz"

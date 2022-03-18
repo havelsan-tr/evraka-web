@@ -1,0 +1,50 @@
+{{ $comparison := .Site.Params.section_comparison }}
+<section id="comparison" class="d-flex">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-auto d-flex flex-column flex-lg-row text-center text-lg-left align-items-center p-5">
+                <img class="mr-lg-3" src="/images/comparison.svg" />
+                <h2 class="section-title mr-lg-3">{{ $comparison.title }}</h2>
+                <h5>{{ $comparison.subtitle }}</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto mx-auto">
+                <table class="table table-responsive table-bordered text-center">
+                    <thead class="thead-primary">
+                        <tr class="d-flex">
+                            {{ range $comparison.header }}<th scope="col"
+                                class="d-flex col-2 align-items-center justify-content-center">{{ .head }}</th>{{ end }}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $i, $v := $comparison.row }}
+                        <tr class="d-flex{{if not (modBool $i 2)}} table-active{{end}}">
+                            <td class="col-2 d-flex align-items-center justify-content-center">{{ $v.title }}</td>
+                            {{ range $i, $v := $v.columns }}
+                            <td class="col-2 d-flex align-items-center justify-content-center">
+                                {{ if isset $v "conditional" }}<i
+                                    class="fa fa-circle fa-2x"></i>{{ else if eq $v.tick true }}<i
+                                    class="fa fa-check fa-2x"></i>{{else}}<i class="fa fa-times fa-2x"></i>{{end}}</td>
+                            {{ end }}
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="container py-5">
+                <div class="row" data-aos="zoom-in">
+                    <div class="col-12 col-lg-2 text-center text-lg-left">
+                        <img src="/images/captain.svg" class="img-fluid" />
+                    </div>
+                    <div class="col-12 justify-content-end col-lg-10 d-flex flex-column">
+                        <h2>Bu bilgi dikkatinizi çekebilir?</h2>
+                        <p>Politikalar XML formatında politikalardan oluşurlar, istemciye Kaptan aracılığıyla gönderilip
+                            kontrolü sağlanır. Kaptan üzerindeki yapı ise Liman üzerinden yapılır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

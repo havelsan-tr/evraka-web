@@ -1,0 +1,21 @@
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ $title := print .Site.Title " | " .Title }} {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ if eq .Site.Params.openGraph true }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ end }}
+    <meta
+      name="description"
+      content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Placeholder Description{{ end }}"
+    />
+    <link rel="icon" href="/fav.png" type="image/png">
+    <link rel="stylesheet" href="/fonts/fontawesome.css">
+    <link rel="stylesheet" href="/fonts/inter.css">
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | minify -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+</html>

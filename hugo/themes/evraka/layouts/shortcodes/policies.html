@@ -1,0 +1,8 @@
+{{- $policies := .Site.Params.section_policies.features }}
+<div class="row py-3">
+    <div class="container">
+        <div class="row">{{- range $policies }}<div class="col-12 col-lg-4 text-center text-lg-left">
+                <ul class="list-group list-group-flush">{{ range .list }}<li class="list-group-item">{{ .li }}</li>{{ end }}</ul>
+            </div>{{ end }}</div>
+    </div>
+</div>

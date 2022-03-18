@@ -1,0 +1,83 @@
+<script
+  src="/scripts/aciklab.bundle.js"
+></script>
+{{ if eq .Params.title "Açık Kaynak Ürün Ailesi" }}
+<script src="/scripts/popper.min.js"></script>
+{{ end }}
+<!--
+<script
+  src="/scripts/bootstrap.min.js"
+></script>
+<script
+  src="/scripts/aos.js"
+></script>
+<script
+  src="/scripts/venobox.min.js"
+></script>-->
+<script
+  src="/scripts/aciklab.js"
+></script>
+
+{{ if (eq .Params.title "İletişim") }}
+<style>
+  .grecaptcha-badge { visibility: hidden; }
+</style>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ"></script>
+<script>
+$('#contact').on('submit', function (e) {
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  e.stopPropagation();
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ', {action: 'subscribe_newsletter'}).then(function(token) {
+          $('#contact').prepend('<input type="hidden" name="token" value="' + token + '">');
+          $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
+          $.ajax({
+            type: "POST",
+            url: "https://ws.aciklab.org/contact_liman",
+            data: $('#contact').serialize(),
+            success: function (data) {
+                $('#contact')[0].reset();
+                $("#uyari").html(`<div class="alert alert-success" role="alert">
+                  ${data}
+                </div>`);
+            }
+        });
+      });
+  });
+});
+</script>
+{{ end }}
+
+{{ if or (eq .Params.title "Ücretlendirme") (.IsHome)}}
+<style>
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
+</style>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ"></script>
+<script>
+  $('#contact').on('submit', function (e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    e.stopPropagation();
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ', { action: 'subscribe_newsletter' }).then(function (token) {
+        $('#contact').prepend('<input type="hidden" name="token" value="' + token + '">');
+        $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
+        $.ajax({
+          type: "POST",
+          url: "https://ws.aciklab.org/contact_liman_sales",
+          data: $('#contact').serialize(),
+          success: function (data) {
+            $('#contact')[0].reset();
+            $("#uyari").html(`<div class="alert alert-success" role="alert">
+                  ${data}
+                </div>`);
+          }
+        });
+      });
+    });
+  });
+</script>
+{{ end }}
