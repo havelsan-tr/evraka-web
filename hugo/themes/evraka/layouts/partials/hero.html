@@ -8,7 +8,7 @@
                     <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 text-center text-lg-left"
                         data-aos-anchor-placement="top-center" data-aos="fade-up" data-aos-delay="200">
                         <h1 class="big mb-3" style="font-family: Arial, Helvetica, sans-serif;">{{ $v.title }}</h1>
-                        <h5 class="mb-3">{{ safeHTML $v.subtitle }}</h5>
+                        <p class="mb-3" style="font-size: 18px; line-height: 30px;">{{ safeHTML $v.subtitle }}</p>
                         {{ if $v.logos }}
                         <div class="row mt-4 mb-5">
                             {{ range $v.logos }}
@@ -28,20 +28,19 @@
                     </div>
                     {{ if $v.image }}
                     <div class="d-flex align-items-center col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                        <picture>
-                            <source srcset="{{ printf "/images/%s.webp"  $v.image | relURL }}" type="image/webp">
-                            <img src="{{ printf "/images/%s.png"  $v.image | relURL }}" class="img-fluid" alt="">
-                        </picture>
+                        <img src="{{ printf "/images/%s" $v.image | relURL }}" class="img-fluid" alt="">
                     </div>
                     {{ end }}
                 </div>
             </div>
             {{ end }}
         </div>
+        {{ if ne (len $hero) 1 }}
         <ol class="carousel-indicators">
             {{ range $i,$v := $hero }}
             <li data-target="#hero-carousel" data-slide-to="{{ $i }}" {{ if eq $i 0}} class="active" {{ end }}></li>
             {{ end }}
         </ol>
+        {{ end }}
     </div>
 </section>

@@ -19,7 +19,7 @@
                     {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
                     <li class="nav-item dropdown">
-                        <a class="nav-link pt-0 pb-0 pt-lg-3 dropdown-toggle" href="#" id="wdropdown" role="button"
+                        <a class="nav-link pt-0 pb-0 pt-lg-1 dropdown-toggle" href="#" id="wdropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ .Name }}
                         </a>
@@ -31,7 +31,7 @@
                     </li>
                     {{ else }}
                     <li class="nav-item"><a
-                            class="nav-link pt-0 pb-0 pt-lg-3{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}"
+                            class="nav-link pt-0 pb-0 pt-lg-1{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}"
                             href="{{ .URL }}">{{ .Name }}</a>
                     </li>
                     {{ end }}
@@ -39,4 +39,7 @@
                 </ul>
         </nav>
     </div>
+    {{ if and .IsHome .Site.Params.hero }}
+    {{ partial "hero.html" . }}
+    {{ end }}
 </header>

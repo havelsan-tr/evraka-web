@@ -21,7 +21,7 @@ body {
 
 .navbar-brand {
     :first-child {
-        max-height: 1.8rem;
+        max-height: 35px;
     }
 
     :last-child {
@@ -78,13 +78,19 @@ body {
 }
 
 #header {
-    background: #051b35;
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0d3846, #3e7a6e);
+  background: linear-gradient(to right, #0d3846, #3e7a6e);
 }
 
 section#hero {
-    background: #051b35 url(/images/slide-back.svg) 85% 0px no-repeat;
+    background: url(/images/slide-back.svg) 85% 0px no-repeat;
     position: relative;
     color: #ffffff;
+}
+
+.hero-img {
+  float: right;
 }
 
 .carousel-indicators {
@@ -207,7 +213,9 @@ h2 {
 
 
 #footer {
-    background: #051B35;
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0d3846, #3e7a6e);
+    background: linear-gradient(to right, #0d3846, #3e7a6e);
     color: #ffffff;
 
     .list-group-item {

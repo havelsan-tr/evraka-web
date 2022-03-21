@@ -32,7 +32,7 @@ menu:
     weight: 2
   footer:
   - identifier: diger
-    name: "/images/logo.svg"
+    name: "/images/logo.png"
   - identifier: havelsan
     parent: diger
     name: HAVELSAN
@@ -51,33 +51,20 @@ menu:
     url: "https://docs.liman.dev/"
 params:
   openGraph: true
-  description: HAVELSAN Liman Merkezi Yönetim Sistemi
+  description: HAVELSAN EVRAKA Belge Yönetim Sistemi
   navbarlogo:
     main:
-      image: logo.svg
+      image: logo.png
     sub:
       image: sub.svg
   hero:
-    - title: Merkezi Yönetim Sistemi
-      subtitle: BT süreçlerinizde bulunan bütün bileşenleri uzaktan, kararlı, güvenli ve genişletilebilir yöntemler ile merkezi olarak yönetmenizi sağlar.<br/><br/>Açık kaynak göç projelerinde Linux çekirdeğine sahip işletim sistemlerini ve diğer platformları EVRAKA Belge Yönetim Sistemi ile yönetebilirsiniz.
-      logos:
-        - image: "aciklab.png"
+    - subtitle: “Kaynakların etkin ve verimli kullanılması” ve “Çevreye duyarlılık” ilkelerini kurumsal değerlerinden biri olarak benimsemiş olan HAVELSAN, kâğıda dayalı tüm iş süreçlerini dijital bir ortama taşımak ve kolay, hızlı ve güvenli doküman paylaşımını sağlamak amacıyla tümüyle yerli ve milli imkânlar ile EVRAKA’yı geliştirmiştir.<br /><br />EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir elektronik doküman ve belge yönetim sistemidir.<br /><br />EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir belge akışı ile ŞEFFAFLIĞI, altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.<br /><br />
       buttons:
-        - text: Neden EVRAKA Belge Yönetim Sistemi?
-          link: "neden-liman-mys"
         - text: Demo Talebi
           link: "/iletisim/"
-      image: liman-screen
-    - title: Açık Kaynak Çekirdek Yazılımı
-      subtitle: EVRAKA Belge Yönetim Sistemi çekirdek yazılımı açık kaynak bir yazılımdır ve herkese açıktır. Github sayfamızdan kodları görüntüleyebilir ve kullanmaya hemen başlayabilirsiniz.<br/><br/>Debian depomuzu sisteminize ekleyerek, çok kısa bir sürede desteklenen işletim sistemlerine kurulum yapabilirsiniz.
-      logos:
-        - image: "aciklab.png"
-      buttons:
-        - text: Github
-          link: https://github.com/limanmys
-        - text: Kurulum
-          link: https://depo.aciklab.org/
-      image: liman-gorsel
+        - text: Satın Al
+          link: "/iletisim/"
+      image: paper-1.png
   section_about: 
     video_link: "https://www.youtu.be/yZyScWN2IbQ"
     thumbnail: video-holder.png
@@ -201,11 +188,11 @@ params:
   footer:
     logo: footer-logo.png
     socialmedia:
-      - link: https://github.com/limanmys
+      - link: https://github.com/havelsan-tr
         icon: "fab fa-github"
-      - link: https://www.aciklab.org/
+      - link: https://www.havelsan.com.tr/
         icon: "fa fa-globe"
-      - link: mailto:aciklab@havelsan.com.tr
+      - link: mailto:info@havelsan.com.tr
         icon: "fa fa-envelope"
 module:
   imports:
