@@ -1,5 +1,5 @@
 ---
-title: "İletişim"
+title: "Demo Talebi"
 title_hidden: true
 menu:
   main:
@@ -12,18 +12,10 @@ menu:
 <div class="col-12 col-lg-6">
     <h2>Deneyim için Formu Doldurun</h2>
     <p>
-        Ücretsiz Demo İsteyin! BT süreçlerinizi aksaklığa sebep olmadan
-        kavram ispat çalışması sunuyoruz. Pardus Göç Projelerinizi ilk
-        adımını risk almadan Liman MYS ile başlatabilirsiniz. Kavram
-        ispat çalışması sonrası 15 gün ücretsiz deneme sürümünü sizlerde
-        test edebilirsiniz.
+        Ücretsiz Demo İsteyin! Kağıda dayalı bütün süreçlerinizi dijital ortamda yönetmek, mevzuat ve yönergelere uygun belge üretmek için ilk adımı EVRAKA ile başlatabilirsiniz.
     </p>
     <p>
-        Liman MYS ile kullanımda olan dizinlerin (Samba, Aktif Dizin)
-        entegrasyonu hizmetler kesintiye uğramadan sağlanmaktadır. Liman
-        MYS'nin bileşenleri: Liman, Kaptan, Tayfa olarak üçe
-        ayrılmıştır. Bu bileşenler, Liman MYS'nin kararlı ve güvenli
-        olarak çalışmasını sağlar.
+        EVRAKA ile belge üzerinden yürütülen iş süreçleri otomatik hale gelir, karar verme süreçleri hızlanır, işlem kuyrukları ve tamamlanma süresi kısalır, insan hataları ortadan kalkar, zaman kaybı ve maliyetler azalırken, kalite ve verimlilik artar.
     </p>
 </div>
 <div class="col-12 col-lg-6">
@@ -51,10 +43,6 @@ menu:
         <div class="form-group">
             <label for="email">E-posta adresi</label>
             <input name="email" type="email" class="form-control" id="email">
-        </div>
-        <div class="form-group">
-            <label for="adres">Kurum adresi</label>
-            <input name="adres" type="text" class="form-control" id="adres">
         </div>
         <div class="form-group">
             <label for="telefon">Telefon</label>

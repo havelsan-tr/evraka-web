@@ -3,7 +3,7 @@ page_title: Neden Liman MYS?
 title: Neden Liman Merkezi Yönetim Sistemi?
 menu:
   main:
-    name: "Neden Liman?"
+    name: "Neden Evraka?"
     parent: "about"
     weight: 1
 ---

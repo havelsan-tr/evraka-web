@@ -44,11 +44,11 @@ menu:
   - identifier: documentation
     parent: diger
     name: Dökümantasyon
-    url: "https://docs.liman.dev/"
+    url: "https://docs.Evraka.dev/"
   - identifier: guide
     parent: diger
     name: Rehber
-    url: "https://docs.liman.dev/"
+    url: "https://docs.Evraka.dev/"
 params:
   openGraph: true
   description: HAVELSAN EVRAKA Belge Yönetim Sistemi
@@ -68,11 +68,11 @@ params:
   section_about: 
     video_link: "https://www.youtu.be/yZyScWN2IbQ"
     thumbnail: video-holder.png
-    title: Liman Yönetimi
+    title: Evraka Yönetimi
     text: "PHP dili kullanılarak Laravel Frameworkü ile geliştirilmiştir. EVRAKA Belge Yönetim Sistemi özellikleri eklenti olarak isimlendirdiğimiz paket yönetim sistemi baz alınarak tasarlandı.<br />
     EVRAKA Belge Yönetim Sistemi ile kullanımda olan dizinlerin (Samba, Aktif Dizin) entegrasyonu hizmetler kesintiye uğramadan sağlanmaktadır. <br />
-    EVRAKA Belge Yönetim Sistemi'nin bileşenleri: Liman, Kaptan, Tayfa olarak üçe ayrılmıştır. Bu bileşenler, EVRAKA Belge Yönetim Sistemi'nin kararlı ve güvenli olarak çalışmasını sağlar. <br />
-    Liman Mimari olarak yönetilecek uç birimlerde “C/ C++  ” programlama dili ile ile geliştirilmiş “Tayfa ” adında minimal kaynak tüketen ajanlarımız bulunmaktadır."
+    EVRAKA Belge Yönetim Sistemi'nin bileşenleri: Evraka, Kaptan, Tayfa olarak üçe ayrılmıştır. Bu bileşenler, EVRAKA Belge Yönetim Sistemi'nin kararlı ve güvenli olarak çalışmasını sağlar. <br />
+    Evraka Mimari olarak yönetilecek uç birimlerde “C/ C++  ” programlama dili ile ile geliştirilmiş “Tayfa ” adında minimal kaynak tüketen ajanlarımız bulunmaktadır."
   section_comparison:
     title: Karşılaştırma
     subtitle: HAVELSAN EVRAKA Belge Yönetim Sistemi'nin özgünlükleri

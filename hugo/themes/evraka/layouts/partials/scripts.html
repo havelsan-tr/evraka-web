@@ -1,19 +1,6 @@
 <script
   src="/scripts/aciklab.bundle.js"
 ></script>
-{{ if eq .Params.title "Açık Kaynak Ürün Ailesi" }}
-<script src="/scripts/popper.min.js"></script>
-{{ end }}
-<!--
-<script
-  src="/scripts/bootstrap.min.js"
-></script>
-<script
-  src="/scripts/aos.js"
-></script>
-<script
-  src="/scripts/venobox.min.js"
-></script>-->
 <script
   src="/scripts/aciklab.js"
 ></script>
@@ -34,7 +21,7 @@ $('#contact').on('submit', function (e) {
           $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
           $.ajax({
             type: "POST",
-            url: "https://ws.aciklab.org/contact_liman",
+            url: "https://ws.aciklab.org/",
             data: $('#contact').serialize(),
             success: function (data) {
                 $('#contact')[0].reset();
@@ -67,7 +54,7 @@ $('#contact').on('submit', function (e) {
         $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
         $.ajax({
           type: "POST",
-          url: "https://ws.aciklab.org/contact_liman_sales",
+          url: "https://ws.aciklab.org/",
           data: $('#contact').serialize(),
           success: function (data) {
             $('#contact')[0].reset();
