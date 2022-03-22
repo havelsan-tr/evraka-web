@@ -1,4 +1,13 @@
 jQuery(document).ready(function ($) {
+    $(".ref-slider").owlCarousel({
+      margin: 10,
+      loop: true,
+      items: 6,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+    });
+
     $(function () {
       $(".venobox").venobox();
       AOS.init({
@@ -48,5 +57,7 @@ jQuery(document).ready(function ($) {
     } catch (err) {
       //
     }
-  });   
+    
+  
+});   
 
