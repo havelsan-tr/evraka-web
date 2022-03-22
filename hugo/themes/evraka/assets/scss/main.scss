@@ -160,7 +160,9 @@ section#nav {
 }
 
 .banner {
-    background: #051B35;
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0d3846, #3e7a6e);
+    background: linear-gradient(to right, #0d3846, #3e7a6e);
     color: #ffffff;
     font-size: 26px;
 }
@@ -198,11 +200,13 @@ h2 {
 }
 
 .info {
-    &.reverse {
-        background: #B4AC61;
-    }
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0d3846, #3e7a6e);
+    background: linear-gradient(to right, #0d3846, #3e7a6e);
 
-    background: #7461B4;
+    i {
+      color: #eee;
+    }
 
     p {
         color: #ffffff;
