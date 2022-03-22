@@ -1,4 +1,4 @@
-baseURL: https://havelsan-tr.github.io/evraka-web/
+baseURL: https://havelsan-tr.github.io/
 languageCode: tr-tr
 title: EVRAKA Belge Yönetim Sistemi | HAVELSAN
 theme: evraka
@@ -37,18 +37,6 @@ menu:
     parent: diger
     name: HAVELSAN
     url: https://www.havelsan.com.tr/
-  - identifier: aciklab
-    parent: diger
-    name: Açıklab
-    url: https://www.aciklab.org/
-  - identifier: documentation
-    parent: diger
-    name: Dökümantasyon
-    url: "https://docs.Evraka.dev/"
-  - identifier: guide
-    parent: diger
-    name: Rehber
-    url: "https://docs.Evraka.dev/"
 params:
   openGraph: true
   description: HAVELSAN EVRAKA Belge Yönetim Sistemi
@@ -58,7 +46,8 @@ params:
     sub:
       image: sub.svg
   hero:
-    - subtitle: “Kaynakların etkin ve verimli kullanılması” ve “Çevreye duyarlılık” ilkelerini kurumsal değerlerinden biri olarak benimsemiş olan HAVELSAN, kâğıda dayalı tüm iş süreçlerini dijital bir ortama taşımak ve kolay, hızlı ve güvenli doküman paylaşımını sağlamak amacıyla tümüyle yerli ve milli imkânlar ile EVRAKA’yı geliştirmiştir.<br /><br />EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir elektronik doküman ve belge yönetim sistemidir.<br /><br />EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir belge akışı ile ŞEFFAFLIĞI, altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.<br /><br />
+    - title: Belge Yönetim Sistemi
+      subtitle: EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir elektronik doküman ve belge yönetim sistemidir.<br /><br />
       buttons:
         - text: Demo Talebi
           link: "/iletisim/"
@@ -68,85 +57,18 @@ params:
   section_about: 
     video_link: "https://www.youtu.be/yZyScWN2IbQ"
     thumbnail: video-holder.png
-    title: Evraka Yönetimi
-    text: "PHP dili kullanılarak Laravel Frameworkü ile geliştirilmiştir. EVRAKA Belge Yönetim Sistemi özellikleri eklenti olarak isimlendirdiğimiz paket yönetim sistemi baz alınarak tasarlandı.<br />
-    EVRAKA Belge Yönetim Sistemi ile kullanımda olan dizinlerin (Samba, Aktif Dizin) entegrasyonu hizmetler kesintiye uğramadan sağlanmaktadır. <br />
-    EVRAKA Belge Yönetim Sistemi'nin bileşenleri: Evraka, Kaptan, Tayfa olarak üçe ayrılmıştır. Bu bileşenler, EVRAKA Belge Yönetim Sistemi'nin kararlı ve güvenli olarak çalışmasını sağlar. <br />
-    Evraka Mimari olarak yönetilecek uç birimlerde “C/ C++  ” programlama dili ile ile geliştirilmiş “Tayfa ” adında minimal kaynak tüketen ajanlarımız bulunmaktadır."
-  section_comparison:
-    title: Karşılaştırma
-    subtitle: HAVELSAN EVRAKA Belge Yönetim Sistemi'nin özgünlükleri
-    header:
-      - head:
-      - head: HAVELSAN EVRAKA Belge Yönetim Sistemi
-      - head: Microsoft RSAT
-      - head: RedHat - FreeIPA / Ansible / Spacewalk
-      - head: Microsoft Windows Admin Center
-      - head: Canonical Landscape
-    row:
-      - title: Ajansız Linux Yönetimi
-        columns:
-          - tick: true
-          - tick: false
-          - tick: true
-          - tick: false
-          - tick: true
-      - title: Ajansız Windows Yönetimi
-        columns:
-          - tick: true
-          - tick: true
-          - tick: true
-          - tick: true
-          - tick: false
-      - title: Web Arayüz
-        columns:
-          - tick: true
-          - tick: false
-          - tick: true
-          - tick: true
-          - tick: true
-      - title: Microsoft Aktif Dizin Desteği
-        columns:
-          - tick: true
-          - tick: true
-          - tick: false
-          - tick: true
-          - tick: false
-      - title: SambaDC Desteği
-        columns:
-          - tick: true
-          - tick: false
-          - tick: false
-          - tick: false
-          - tick: false
-      - title: Linux Sistem Politika Yönetimi
-        columns:
-          - tick: true
-          - tick: false
-          - conditional: true
-          - tick: false
-          - conditional: true
-      - title: Windows Sistem Politika Yönetimi
-        columns:
-          - conditional: true
-          - tick: true
-          - tick: false
-          - tick: true
-          - tick: false
-      - title: Linux Sistemlere Görev Gönderme
-        columns:
-          - tick: true
-          - tick: false
-          - tick: true
-          - tick: false
-          - tick: true
-      - title: Bulut Sistemler ile Otomatik Entegrasyon
-        columns:
-          - tick: false
-          - tick: false
-          - tick: true
-          - tick: true
-          - tick: false
+    title: Neden EVRAKA?
+    text: '“Kaynakların etkin ve verimli kullanılması” ve “Çevreye duyarlılık” ilkelerini kurumsal değerlerinden biri olarak benimsemiş olan HAVELSAN, kâğıda dayalı tüm iş süreçlerini dijital bir ortama taşımak ve kolay, hızlı ve güvenli doküman paylaşımını sağlamak amacıyla tümüyle yerli ve milli imkânlar ile EVRAKA’yı geliştirmiştir.
+
+
+EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir 
+elektronik doküman ve belge yönetim sistemidir.
+
+
+EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir belge akışı ile ŞEFFAFLIĞI, 
+altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile 
+kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.
+'
   section_policies:
     features:
       - list:
