@@ -1,4 +1,4 @@
-baseURL: https://havelsan-tr.github.io/
+baseURL: https://evraka.havelsan.com.tr/
 languageCode: tr-tr
 title: EVRAKA Belge Yönetim Sistemi | HAVELSAN
 theme: evraka
@@ -16,20 +16,6 @@ menu:
     name: "Ana Sayfa"
     url: "/"
     weight: 1
-  - identifier: about
-    name: "Keşfedin"
-    url: ""
-    weight: 2
-  - identifier: policies
-    name: "Politikalar"
-    parent: "about"
-    url: "/#policies"
-    weight: 3
-  - identifier: comparison
-    name: "Karşılaştırma"
-    parent: "about"
-    url: "/#comparison"
-    weight: 2
   footer:
   - identifier: diger
     name: "/images/logo.png"
@@ -37,6 +23,7 @@ menu:
     parent: diger
     name: HAVELSAN
     url: https://www.havelsan.com.tr/
+    weight: 1
 params:
   openGraph: true
   description: HAVELSAN EVRAKA Belge Yönetim Sistemi
@@ -47,12 +34,12 @@ params:
       image: sub.svg
   hero:
     - title: Belge Yönetim Sistemi
-      subtitle: EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir elektronik doküman ve belge yönetim sistemidir.<br /><br />
+      subtitle: HAVELSAN, kağıda dayalı tüm süreçlerini dijital bir ortama taşımak ve kolay, hızlı ve güvenli doküman paylaşımını sağlamak amacıyla tümüyle yerli ve milli imkânlar ile EVRAKA’yı geliştirmiştir. EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini dijital ortamda yönetilmesini sağlar.<br /><br />
       buttons:
         - text: Demo Talebi
-          link: "/iletisim/"
+          link: "/demo-talebi/"
         - text: Satın Al
-          link: "/iletisim/"
+          link: "/demo-talebi/"
       image: paper-1.png
   section_about: 
     video_link: "https://www.youtu.be/yZyScWN2IbQ"
@@ -69,44 +56,25 @@ EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir 
 altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile 
 kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.
 '
-  section_policies:
+  section_features:
     features:
       - list:
-          - li: Paket Yönetim Politikası
-          - li: Servis Yönetim Politikası
-          - li: Zamanlanmış Görevler Politikası
-          - li: Güvenlik Duvarı Politikası
-          - li: Disk Kotası Politikası
-          - li: Kütük Politikası
-          - li: USB Politikası
-          - li: Yazıcı Politikası
-          - li: Ağ Yönetimi Politikası
-          - li: Mozilla Firefox Politikası
-          - li: Conky Politikası
+          - li: Bilgi yönetimine katkı
+          - li: Güçlü altyapı
+          - li: Bağımsız veritabanı
+          - li: Kurumsal hafıza birikimine katkı
+          - li: Standartlara ve yönergelere uyum (TS13298, Askeri Yönergeler, Resmi Yazışmalar, E-İmza)
+          - li: İş akışı ile onay süreçlerini izleme
+          - li: E-yazışma ile kurumlar arası belge alışverişi
       - list:
-          - li: Kota Politikası
-          - li: Yetkili Kullanıcı Politikası
-          - li: GRUB Politikası
-          - li: Sertifika Politikası
-          - li: GNOME Politikası
-          - li: Masaüstü Kısayolları Politikası
-          - li: Tayfa Politikası
-          - li: SSSD Politikası
-          - li: Samba Paylaşım Politikası
-          - li: Başlat Menüsü Politikası
-          - li: HAVELSAN Giriş Ekranı Politikası
-      - list:
-          - li: Dosya Transfer Politikası
-          - li: Güç Yönetim Politikası
-          - li: XFCE Politikası
-          - li: Depo Adres Yönetim Politikası
-          - li: Duvar Kağıdı Politikası
-          - li: Merkezi Güncelleme Politikası
-          - li: LibreOffice Politikası
-          - li: NTP Politikası Politikası
-          - li: Klavye Kısayolları Politikası
-          - li: Dosya Yetkileri Politikası
-          - li: SSH Yönetim Politikası
+          - li: Belgeye hızlı erişim
+          - li: Süreçlerin standartlaşması ve kurumsallaşma
+          - li: Mobil olarak belge imzalama
+          - li: Arşivleme Sürüm Kontrolü ile değişiklikleri izleme
+          - li: Yetki yönetimi, E-İmza, şifreleme ve loglama ile güvenli belge yönetimi
+          - li: Fiziksel arşivin elektronik ortama aktarımı
+          - li: Güçlü entegrasyon desteği
+          - li: Mevzuat ve Yönergelere Uygunluk
   footer:
     logo: footer-logo.png
     socialmedia:

@@ -1,9 +1,11 @@
 ---
-title: "Demo Talebi"
+title: "Demo Talebi & İletişim"
 title_hidden: true
 menu:
   main:
-
+    weight: 4
+  footer:
+    parent: diger
     weight: 4
 
 ---

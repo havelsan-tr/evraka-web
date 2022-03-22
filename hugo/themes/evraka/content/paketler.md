@@ -5,6 +5,9 @@ menu:
   main:
     weight: 3
     name: "Paketler"
+  footer:
+    parent: diger
+    weight: 2
 
 layout: skeleton
 ---
