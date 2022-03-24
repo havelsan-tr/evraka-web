@@ -18,7 +18,7 @@ menu:
     weight: 1
   footer:
   - identifier: diger
-    name: "/images/logo.png"
+    name: "/images/evraka-logo-big.png"
   - identifier: havelsan
     parent: diger
     name: HAVELSAN
@@ -29,7 +29,7 @@ params:
   description: HAVELSAN EVRAKA Belge Yönetim Sistemi
   navbarlogo:
     main:
-      image: logo.png
+      image: evraka-logo-big.png
     sub:
       image: sub.svg
   hero:
@@ -40,7 +40,7 @@ params:
           link: "/demo-talebi/"
         - text: Satın Al
           link: "/demo-talebi/"
-      image: evraka-1.jpg
+      image: evraka-side-pic.png
   section_about: 
     video_link: "https://www.youtu.be/yZyScWN2IbQ"
     thumbnail: video-holder.png
