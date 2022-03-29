@@ -11,11 +11,12 @@ menu:
     name: "Neden EVRAKA?"
 ---
 
-“Kaynakların etkin ve verimli kullanılması” ve “Çevreye duyarlılık” ilkelerini kurumsal değerlerinden biri olarak benimsemiş olan HAVELSAN, kâğıda dayalı tüm iş süreçlerini dijital bir ortama taşımak ve kolay, hızlı ve güvenli doküman paylaşımını sağlamak amacıyla tümüyle yerli ve milli imkânlar ile EVRAKA’yı geliştirmiştir.
-
-EVRAKA, kurumların iç yönergelere ve yönetmeliklere uygun olarak belge üretmesini ve belgelerin üretimden tasfiyesine kadar tüm süreçlerini yönetmesini sağlayan; web tabanlı kolay yapılandırılabilir, elektronik ve mobil imza destekli bir 
-elektronik doküman ve belge yönetim sistemidir.
-
-EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir belge akışı ile ŞEFFAFLIĞI, 
-altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile 
-kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.
+“EVRAKA, yetkilendirme seviyesine bağlı olarak izlenebilir ve takip edilebilir belge akışı ile ŞEFFAFLIĞI, altyapıları ve gelişmiş yetkilendirme yetenekleri ile GÜVENLİĞİ ve dijitalleşen belge süreçleri ile kağıt kullanımını azaltarak ÇEVREYE DUYARLILIĞI sağlayan bir sistemdir.”
+ 
+“EVRAKA, birbirinden bağımsız tek bir işe odaklanmış uygulamalardan(mikroservisler) oluşmaktadır. Bu sayede yatayda çok kolay büyüyebilen, donanım kaynağını çok verimli kullanabilen aynı anda çok fazla kullanıcıya hizmet verebilen esnek bir yapıya sahiptir.”
+ 
+“Veri tabanı, işletim sistemi ve internet tarayıcı bağımsız çalışan EVRAKA, birbirinden farklı altyapıya sahip tüm müşterilere kesintisiz hizmet sunmaktadır.”
+ 
+“HAVELSAN tarafından geliştirilmiş olan “Şablon Tasarım Aracı” sayesinde kuruma özel belge tipleri çok hızlı bir şekilde uygulamaya eklenebilmekte, şablonlar üzerindeki mevzuat değişiklikleri anında EVRAKA’ya uyarlanabilmektedir.”
+ 
+“Altyapıda kullandığı arama ve loglama teknolojileri sayesinde bilgiye çok hızlı erişim ve gelişmiş ara yüzleriyle çok detaylı log izleme kabiliyeti mevcuttur.”
