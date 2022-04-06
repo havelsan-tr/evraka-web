@@ -160,5 +160,12 @@ Bu iletişim formu reCAPTCHA from Google ile korunmaktadır.<br>
 </footer>
 <script src=/scripts/aciklab.bundle.js></script>
 <script src=/scripts/aciklab.js></script>
+<style>.grecaptcha-badge{visibility:hidden}</style>
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld5f04fAAAAAOSGuJjLNvquRpDnyqVVQXB4zGoZ"></script>
+<script>$('#contact').on('submit',function(a){a.preventDefault(),a.stopImmediatePropagation(),a.stopPropagation(),grecaptcha.ready(function(){grecaptcha.execute('6Ld5f04fAAAAAOSGuJjLNvquRpDnyqVVQXB4zGoZ',{action:'subscribe_newsletter'}).then(function(a){$('#contact').prepend('<input type="hidden" name="token" value="'+a+'">'),$('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">'),$.ajax({type:"POST",url:"https://ws.aciklab.org/evrakacontact",data:$('#contact').serialize(),success:function(a){$('#contact')[0].reset(),$("#uyari").html(`<div class="alert alert-success" role="alert">
+                  ${a}
+                </div>`)},error:function(a){$('#contact')[0].reset(),$("#uyari").html(`<div class="alert alert-danger" role="alert">
+                ${a.responseText}
+              </div>`)}})})})})</script>
 </body>
 </html>
