@@ -5,66 +5,39 @@
   src="/scripts/aciklab.js"
 ></script>
 
-{{ if (eq .Params.title "İletişim") }}
+{{ if or (eq .Params.title "Demo Talebi & İletişim") (eq .Params.title "Paketler") (.IsHome) }}
 <style>
   .grecaptcha-badge { visibility: hidden; }
 </style>
-<script src="https://www.google.com/recaptcha/api.js?render=6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld5f04fAAAAAOSGuJjLNvquRpDnyqVVQXB4zGoZ"></script>
 <script>
 $('#contact').on('submit', function (e) {
   e.preventDefault();
   e.stopImmediatePropagation();
   e.stopPropagation();
   grecaptcha.ready(function() {
-      grecaptcha.execute('6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ', {action: 'subscribe_newsletter'}).then(function(token) {
+      grecaptcha.execute('6Ld5f04fAAAAAOSGuJjLNvquRpDnyqVVQXB4zGoZ', {action: 'subscribe_newsletter'}).then(function(token) {
           $('#contact').prepend('<input type="hidden" name="token" value="' + token + '">');
           $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
           $.ajax({
             type: "POST",
-            url: "https://ws.aciklab.org/",
+            url: "https://ws.aciklab.org/evrakacontact",
             data: $('#contact').serialize(),
             success: function (data) {
                 $('#contact')[0].reset();
                 $("#uyari").html(`<div class="alert alert-success" role="alert">
                   ${data}
                 </div>`);
+            },
+            error: function(data) {
+              $('#contact')[0].reset();
+              $("#uyari").html(`<div class="alert alert-danger" role="alert">
+                ${data.responseText}
+              </div>`);
             }
         });
       });
   });
 });
-</script>
-{{ end }}
-
-{{ if or (eq .Params.title "Ücretlendirme") (.IsHome)}}
-<style>
-  .grecaptcha-badge {
-    visibility: hidden;
-  }
-</style>
-<script src="https://www.google.com/recaptcha/api.js?render=6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ"></script>
-<script>
-  $('#contact').on('submit', function (e) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    e.stopPropagation();
-    grecaptcha.ready(function () {
-      grecaptcha.execute('6LdX36UeAAAAALStl0KL5co3B-dU6gTnx_osvTWJ', { action: 'subscribe_newsletter' }).then(function (token) {
-        $('#contact').prepend('<input type="hidden" name="token" value="' + token + '">');
-        $('#contact').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
-        $.ajax({
-          type: "POST",
-          url: "https://ws.aciklab.org/",
-          data: $('#contact').serialize(),
-          success: function (data) {
-            $('#contact')[0].reset();
-            $("#uyari").html(`<div class="alert alert-success" role="alert">
-                  ${data}
-                </div>`);
-          }
-        });
-      });
-    });
-  });
 </script>
 {{ end }}
